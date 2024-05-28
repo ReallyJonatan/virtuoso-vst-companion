@@ -3,7 +3,8 @@ An open-source VST3 plugin that listens to Remote Control messages from [Virtuos
 
 Built using [JUCE](https://juce.com/download/).
 
-## Known limitations (please let me know if you find a solution or workaround for any of these):
+## Known limitations
+Here's a list of the known limitations of using the companion plugin. Please let me know if you find a solution or workaround for any of these, and feel free to fork the plugin or do a pull request if you solve it in code.
 ### Ableton Live
 Ableton Live has some big limitations in terms of effectively using the companion plugin, and ideally a Max for Live Plugin should be written instead to use the Virtuoso Remote Control messages.
 * Ableton Live cannot learn MIDI CC from the messages produced by the companion plugin, and there is no way to manually map MIDI CC. It can only learn them from hardware controllers, Max for Live Plugins and Remote Scripts as far as I know. 
