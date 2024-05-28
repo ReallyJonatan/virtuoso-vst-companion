@@ -29,5 +29,8 @@ FL Studio should be able to use most aspects of the companion plugin, but setup 
 * FL Studio cannot automatically route from the companion plugin to an instrument on the same channel either, instead MIDI needs to be routed through the plugin settings menus.
 * FL Studio bundled synthesizers (such as Sytrus) do not have a plugin settings menu for MIDI routing, instead both the companion plugin and the bundled synth needs to be placed and linked inside Patcher. However, if both the plugin and the synth is placed within Patcher, the bundled synths cannot learn MIDI CC. To work around this, you need to configure the MIDI CC mappings in the synth *outside* of Patcher, save it as a preset, then load the preset inside Patcher. I have not tested this as you cannot save presets in the trial version of FL Studio, but in theory it should work.
 * FL Studio does not accept pitch bend messages from the plugin, so you'll need to work around this if using MIDI CC if you want to bend pitch.
+### Other limitations
+* The Microphone, Looper and Tape Recorder cannot be used while running Remote Control, since they rely on internally generated audio.
+* By default, the Wavemin will not pitch sounds up and down, since pitch shift is limited to a few semitones in most plug-ins. It does however send parameters mapped to all axes, and depending on your music program and plug-in you can connect the corresponding MIDI CC to effects including tuning and pitch.
 
 For more help or to participate in creating Virtuoso Remote Control applications, please visit [our Discord!](https://discord.gg/virtuoso)
