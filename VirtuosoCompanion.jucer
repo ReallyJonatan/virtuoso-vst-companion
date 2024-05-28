@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="I7DUZB" name="Virtuoso Companion" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
+              jucerFormatVersion="1" pluginFormats="buildVST3" pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut"
+              pluginVST3Category="Network" companyName="Really Interactive"
+              companyWebsite="https://virtuoso-vr.com/" companyEmail="hello@really-interactive.se"
+              pluginRTASCategory="0" lv2Uri="https://virtuoso-vr.com/companion-plugin">
+  <MAINGROUP id="o6TAZk" name="Virtuoso Companion">
+    <GROUP id="{7BBA70FF-274E-C10A-C5D0-7CD6C65E404A}" name="Source">
+      <FILE id="Hz1jPE" name="DebugUtils.cpp" compile="1" resource="0" file="Source/DebugUtils.cpp"/>
+      <FILE id="MSq8rB" name="DebugUtils.h" compile="0" resource="0" file="Source/DebugUtils.h"/>
+      <FILE id="OkBKF9" name="SharedResources.cpp" compile="1" resource="0"
+            file="Source/SharedResources.cpp"/>
+      <FILE id="AIg20o" name="SharedResources.h" compile="0" resource="0"
+            file="Source/SharedResources.h"/>
+      <FILE id="V0QsXr" name="SharedMidiQueue.cpp" compile="1" resource="0"
+            file="Source/SharedMidiQueue.cpp"/>
+      <FILE id="BvuUEa" name="SharedMidiQueue.h" compile="0" resource="0"
+            file="Source/SharedMidiQueue.h"/>
+      <FILE id="EbRJ0O" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="jvW9Vw" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="c9VGpZ" name="OSCtoMIDIHandler.h" compile="0" resource="0"
+            file="Source/OSCtoMIDIHandler.h"/>
+      <FILE id="G6n0WN" name="OSCtoMIDIHandler.cpp" compile="1" resource="0"
+            file="Source/OSCtoMIDIHandler.cpp"/>
+      <FILE id="qzpgqj" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="R96oAW" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\JUCE\modules"/>
+        <MODULEPATH id="juce_osc" path="D:\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
