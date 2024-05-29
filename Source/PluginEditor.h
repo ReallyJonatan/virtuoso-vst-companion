@@ -10,6 +10,7 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "SharedResources.h"
 
 class VirtuosoCompanionAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
@@ -25,8 +26,10 @@ private:
     // access the processor object that created it.
     VirtuosoCompanionAudioProcessor& audioProcessor;
     
-    juce::Label lastMessageLabel;
+    juce::Label listeningChannelLabel;
     juce::ComboBox channelBox;
+    juce::Label pitchWheelNumberLabel;
+    juce::TextEditor pitchWheelNumberEditor;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (VirtuosoCompanionAudioProcessorEditor)
 };

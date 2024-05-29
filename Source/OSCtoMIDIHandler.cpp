@@ -145,7 +145,7 @@ juce::MidiMessage OSCtoMIDIHandler::convertToMidi(const juce::OSCMessage& oscMes
 		int controllerNumber = std::clamp(oscMessage[2].getInt32(), 0, 127);
 		// NOTE: Here we might want to convert Virtuoso controller numbers to sensible MIDI CC numbers, 
         // as many MIDI CC numbers might be reserved for specific purposes
-        if (controllerNumber == 0) { // Remap 0 to pitch wheel
+        if (controllerNumber == pitchWheelNumber) { // Remap pitchWheelNumber to pitch wheel
             int pitchValue = std::clamp(static_cast<int>(oscMessage[0].getFloat32() * 16384), 0, 16383);
             return juce::MidiMessage::pitchWheel(channel, pitchValue);
         }

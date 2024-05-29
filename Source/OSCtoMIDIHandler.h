@@ -27,6 +27,8 @@ public:
 
     void timerCallback() override;
 
+    int pitchWheelNumber = 0;
+
 
 private:
     OSCtoMIDIHandler();
